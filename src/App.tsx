@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Task } from "./models/task";
 import { NewTaskForm } from "./components/NewTaskForm";
+import { TasksList } from "./components/Tasklist";
 
 interface State {
   newTask: Task;
@@ -46,7 +47,7 @@ class App extends Component<{}, State> {
   };
 
   render() {
-    const { newTask } = this.state;
+    const { newTask, tasks } = this.state;
 
     return (
       <div className="App">
@@ -56,6 +57,7 @@ class App extends Component<{}, State> {
           onAdd={this.addTask}
           onChange={this.handleTaskChange}
         />
+        <TasksList tasks={tasks} onDelete={this.deleteTask} />
       </div>
     );
   }
