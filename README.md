@@ -1,5 +1,7 @@
 ## About
 
+*Original project hosted on [Gitlab](https://gitlab.com/sltenorio99_tutorials/typescript-app-2)*
+
 This project is based off of tutorial: <https://www.frontendtyped.com/2019/03/31/react-ts.html>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
